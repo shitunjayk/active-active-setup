@@ -23,11 +23,11 @@ The Jenkinsfile in this repo will create a pipeline that will create a parameter
 
 #### 1. Ceate a pipeline job as shown in pictures below
 Click on new item and create a job with any name you want
-![](/job_creation.png)
-![](/pipeline_job.png)
+![](/images/job_creation.png)
+![](/images/pipeline_job.png)
 
 #### 2. Pipeline will be created from Jenkinsfile on our github repository, so we will choose pipeline from scm and provide the repository details.
-![](/pipelinefromscm.png)
+![](/images/pipelinefromscm.png)
 
 #### 3. Now save and click on Build Now, for the first build the job will fail because it needs to setup paramters mentioned in Jenkinsfile, for the second build it will run successfully
 
