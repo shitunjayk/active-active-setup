@@ -1,5 +1,5 @@
 
-# active-active infrastructre on azure cloud using terraform code and jenkins
+# active-active infrastructre on azure cloud using terraform and jenkins
 
 ## The terraform code will create the following resources
 #### Resource Group
@@ -19,6 +19,19 @@ The terraform code is divided into two directories i.e region-1 and region-2, th
 ![](/images/dir_structure.png)
 
 The Jenkinsfile in this repo will create a pipeline that will create a parameterzed job that will accept apply and destroy as paramter and run the terraform code accordingly, there is approval stage before running terraform apply or destroy which will require human input then only apply/destroy stage will work, this stage is added to tackle the situation where we can accidently trigger the build even we don't want it to.
+### For the Jenkins pipeline we willbe creating declarative pipeline with pipelien from scm. The steps are shown below for creating the jobs for Jenkinsfile
+
+#### 1. Ceate a pipeline job as shown in pictures below
+Click on new item and create a job with any name you want
+![](/job_creation.png)
+![](/pipeline_job.png)
+
+#### 2. Pipeline will be created from Jenkinsfile on our github repository, so we will choose pipeline from scm and provide the repository details.
+![](/pipelinefromscm.png)
+
+#### 3. Now save and click on Build Now, for the first build the job will fail because it needs to setup paramters mentioned in Jenkinsfile, for the second build it will run successfully
+
+#### 4. Our Pipeline will look like this
 ![](/images/pipeline.webp)
 
 
