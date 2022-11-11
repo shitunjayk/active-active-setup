@@ -33,4 +33,6 @@ The Jenkinsfile in this repo will create a pipeline that will create a parameter
 #### 4. Our Pipeline will look like this
 ![](/images/pipeline.webp)
 
+## Author
 
+- [@shitunjay](https://github.com/shitunjayk)
