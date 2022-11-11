@@ -19,7 +19,7 @@ The terraform code is divided into two directories i.e region-1 and region-2, th
 ![](/images/dir_structure.png)
 
 The Jenkinsfile in this repo will create a pipeline that will create a parameterzed job that will accept apply and destroy as paramter and run the terraform code accordingly, there is approval stage before running terraform apply or destroy which will require human input then only apply/destroy stage will work, this stage is added to tackle the situation where we can accidently trigger the build even we don't want it to.
-### For the Jenkins pipeline we willbe creating declarative pipeline with pipelien from scm. The steps are shown below for creating the jobs  for Jenkinsfile
+### For the Jenkins pipeline we willbe creating declarative pipeline with pipeline from scm. The steps are shown below for creating the jobs  for Jenkinsfile
 
 #### 1. Ceate a pipeline job as shown in pictures below, clicking on new item and give a name and choose the type oj job
 ![](/images/job_creation.png)
